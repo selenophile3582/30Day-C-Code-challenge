@@ -1,0 +1,56 @@
+#include <stdio.h>
+
+unsigned long long factorial(int n)
+{
+    if (n == 0 || n == 1)
+        return 1;
+    unsigned long long result = factorial(n - 1) * n;
+    return result;
+}
+
+int main()
+{
+    int n;
+    char ch;
+
+    do
+    {
+
+        printf("Enter a positive integer: ");
+        scanf("%d", &n);
+        if (n < 0)
+        {
+            printf("Please enter positive numbers only :\n");
+            continue;
+        }
+        if (n > 20)
+        {
+            printf("Warning: Results beyond 20! may not be accurate due to overflow.\n");
+        }
+
+        unsigned long long factorialr = 1;
+        for (int i = 1; i <= n; i++)
+        {
+            factorialr *= i;
+        }
+        printf("Factorial of %d = %llu using loop\n", n, factorialr);
+        unsigned long long result = factorial(n);
+        printf("Factorial of %d = %llu using recursion \n", n, result);
+
+        printf("----***----\n");
+
+        do
+        {
+            printf("Do you want to calculate again? (y/n): ");
+            scanf(" %c", &ch);
+            if (ch != 'y' && ch != 'n')
+            {
+                printf("Please only enter y or n.\n");
+            }
+        } while (ch != 'y' && ch != 'n');
+
+    } while (ch == 'y');
+    printf("You choose to exit the factorial calculator \n");
+
+    return 0;
+}
