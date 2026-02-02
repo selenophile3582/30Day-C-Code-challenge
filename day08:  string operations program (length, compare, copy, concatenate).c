@@ -1,11 +1,11 @@
-// // Write a program that:
-// // Takes a string input from the user.
-// // Finds its length without using strlen() (do it manually first).
-// // Then find the length again using strlen() (from <string.h>).
-// // Bonus: Ask the user to enter another string and perform:
-// // Concatenation (strcat)
-// // Comparison (strcmp)
-// // Copying (strcpy)
+ // Write a program that:
+// Takes a string input from the user.
+ // Finds its length without using strlen() (do it manually first).
+// Then find the length again using strlen() (from <string.h>).
+// Bonus: Ask the user to enter another string and perform:
+ // Concatenation (strcat)
+ // Comparison (strcmp)
+ // Copying (strcpy)
 
 // this is  gpt improvised code , my origional code is written below in commented text
 #include <stdio.h>
