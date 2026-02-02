@@ -1,4 +1,4 @@
-// 🧠 Your Task:
+
 // Write a C program that:
 // Takes a string input from the user.
 // Checks whether the string is a palindrome or not.
